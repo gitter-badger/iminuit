@@ -17,7 +17,7 @@ env:
 
 jobs:
   wheels:
-    name: Build wheels on ${{ matrix.os }}
+    name: Build ${{ matrix.py }} wheels on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
